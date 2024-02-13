@@ -29,7 +29,7 @@ async function run() {
         app.post('/api/v1/register', async (req, res) => {
             const { name, email, password } = req.body;
 
-            // Check if username already exists
+            // Check if email already exists
             const existingUser = await collection.findOne({ email });
             if (existingUser) {
                 return res.status(400).json({
