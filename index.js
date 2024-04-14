@@ -15,7 +15,8 @@ const corsConfig = {
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://elegant-fashion-client.vercel.app"],
+    // origin: ["http://localhost:3000"],
     credentials: true,
   })
 );
